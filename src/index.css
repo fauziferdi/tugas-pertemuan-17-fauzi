@@ -4,6 +4,7 @@
   min-height: 100vh;
   flex-wrap: wrap;
   gap: 20px;
+  justify-content: center;
 }
 
 .news-card {
@@ -40,4 +41,75 @@
   display: -webkit-box;
   -webkit-line-clamp: 5;
   -webkit-box-orient: vertical;
+}
+
+.title {
+  text-align: center;
+  font-size: 80px;
+  font-weight: bold;
+}
+
+.loading {
+  text-align: center;
+  font-size: 40px;
+  font-weight: bold;
+  color: grey;
+}
+
+.news-detail {
+  /* Ubah .App menjadi .news-detail */
+  padding: 20px;
+  font-family: sans-serif;
+}
+
+.news-detail h1 {
+  font-size: 2em;
+  margin-top: 90px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.news-detail p {
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+
+.news-detail img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin-bottom: 20px;
+  width: 60%;
+  display: block;
+  margin: 0 auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.back-button {
+  padding: 10px 20px;
+  background-color: firebrick;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1em;
+  margin-top: 0px;
+  margin-bottom: 20px;
+  width: 10%;
+  display: block;
+  margin: 0 auto;
+}
+
+.category-button {
+  padding: 10px 20px;
+  background-color: cadetblue;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.news-detail button:hover {
+  background-color: darkred;
 }

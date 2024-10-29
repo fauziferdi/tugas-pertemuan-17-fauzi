@@ -36,9 +36,9 @@ export default class NewsDetailContainer extends Component {
   render() {
     return (
       <div className="App">
-        <h1>Details container</h1>
+        <h1 className="title">Details container</h1>
         {this.state.loading ? (
-          <p>Loading...</p>
+          <h2 className="loading">Loading...</h2>
         ) : (
           <NewsDetail detail={this.state.detail} onBack={this.handleBack} />
         )}

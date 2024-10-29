@@ -28,9 +28,9 @@ export default class NewsListContainer extends Component {
 
     return (
       <div>
-        <h1>News Container</h1>
+        <h1 className="title">News Container</h1>
         {loading ? (
-          <h1>Loading...</h1>
+          <h2 className="loading">Loading...</h2>
         ) : (
           <NewsList news={news} onSelect={this.props.onSelect} />
         )}
