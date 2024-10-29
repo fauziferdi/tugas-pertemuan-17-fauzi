@@ -28,6 +28,11 @@ export default class NewsDetailContainer extends Component {
       });
     }
   }
+
+  handleBack = () => {
+    this.props.onBack();
+  };
+
   render() {
     return (
       <div className="App">
@@ -35,7 +40,7 @@ export default class NewsDetailContainer extends Component {
         {this.state.loading ? (
           <p>Loading...</p>
         ) : (
-          <NewsDetail detail={this.state.detail} />
+          <NewsDetail detail={this.state.detail} onBack={this.handleBack} />
         )}
       </div>
     );

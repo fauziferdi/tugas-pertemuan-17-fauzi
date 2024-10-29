@@ -7,6 +7,10 @@ export default class App extends Component {
     selectedNewsKey: null,
   };
 
+  handleBack = () => {
+    this.setState({ selectedNewsKey: null });
+  };
+
   handleSelectNews = (newsKey) => {
     console.log(newsKey);
     this.setState({ selectedNewsKey: newsKey });
@@ -16,7 +20,10 @@ export default class App extends Component {
     return (
       <div className="App">
         {this.state.selectedNewsKey ? (
-          <NewsDetailContainer newsKey={this.state.selectedNewsKey} />
+          <NewsDetailContainer
+            newsKey={this.state.selectedNewsKey}
+            onBack={this.handleBack}
+          />
         ) : (
           <NewsListContainer onSelect={this.handleSelectNews} />
         )}
